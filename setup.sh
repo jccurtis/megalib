@@ -93,13 +93,13 @@ if [ "$SHELL" != "/bin/bash" ]; then
   echo " "
 fi
 
-if [[ $EUID -eq 0 ]]; then
-  echo " " 1>&2
-  echo "Error: For security reasons, this script is not intended to be run as superuser/root." 1>&2
-  echo "       It is intended for a user installation of MEGAlib." 1>&2
-  echo " " 1>&2
-  exit 1
-fi
+# if [[ $EUID -eq 0 ]]; then
+#   echo " " 1>&2
+#   echo "Error: For security reasons, this script is not intended to be run as superuser/root." 1>&2
+#   echo "       It is intended for a user installation of MEGAlib." 1>&2
+#   echo " " 1>&2
+#   exit 1
+# fi
 
 
 
